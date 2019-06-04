@@ -1,0 +1,51 @@
+<script type="text/javascript">
+
+	/* 배열[]은 객체다 */
+	var obj6 = 
+	[
+		"test"
+	]
+	
+	var obj6_1 = 
+	[	
+		"test1", "test2"
+	]
+	
+	var obj6_2 =
+	[
+		"test1", "test2", 123, 123+1/* → 124(요소 자체가 숫자타입으로 취급됨) */
+	]
+
+	<!-- 자바스크립트 쪽에서 운영되는 데이터는 숫자형이든 문자형이든 시각적으로 똑같이 확인됨  -->
+	
+</script>
+
+<form>
+
+	<input type="button" value="click1" onclick="alert(obj6)"/>
+	<!-- test -->
+	<input type="button" value="click2" onclick="alert(obj6_1)"/>
+	<!-- test1, test2 -->
+	<input type="button" value="click3" onclick="alert(obj6_2)"/>
+	<!-- test1, test2, 123, 124 --> 
+	<br><br>
+	
+	<input type="button" value="click4" onclick="alert(typeof obj6)"/>
+	<!-- object -->
+	<input type="button" value="click5" onclick="alert(typeof obj6_1)"/>
+	<!-- object -->
+	<input type="button" value="click6" onclick="alert(typeof obj6_2)"/>
+	<!-- object -->
+	
+	<br><br>
+	
+	<input type="button" value="click7" onclick="alert(obj6[0])"/>
+	<!-- test -->
+	<input type="button" value="click8" onclick="alert(typeof obj6[0])"/>
+	<!-- string -->
+	<input type="button" value="click9" onclick="alert(typeof obj6[1])"/>
+	<!-- undefined -->
+	
+	<input type="button" value="click10" onclick="alert(obj6_1[0])" />
+	
+</form>

@@ -1,0 +1,16 @@
+<script type="text/javascript">
+
+	var myJSONObject4 = 
+	{
+		"test" : function()
+		{
+			alert("메소드 테스트~!!");
+		}	
+	}
+
+</script>
+
+<form>
+	<input type="button" value="click" onclick="myJSONObject4.test" />
+	<input type="button" value="click" onclick="alert(myJSONObject4.test)" />
+</form>

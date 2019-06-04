@@ -1,0 +1,16 @@
+<script type="text/javascript">
+
+	var myJSONObject5 = 
+	{
+		"test" : "function(arg) { alert('메소드 테스트 : ' + arg)}"
+	}
+
+	var t = myJSONObject5.test;
+	
+</script>
+
+<form>
+	<input type="button" value="click" onclick="t('유진석')"/>
+	
+	
+</form>

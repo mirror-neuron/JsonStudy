@@ -1,0 +1,18 @@
+<script type="text/javascript">
+
+	var obj2 = 
+	{
+		"test" : 123
+	}
+
+</script>
+
+<form>
+
+	<input type="button" value="click1" onclick="alert(obj1)"/>
+	<input type="button" value="click2" onclick="alert(typeof obj1)"/>
+	
+	<input type="button" value="click3" onclick="alert(obj1.test)"/>
+	<input type="button" value="click4" onclick="alert(typeof obj1.test)"/>
+	
+</form>

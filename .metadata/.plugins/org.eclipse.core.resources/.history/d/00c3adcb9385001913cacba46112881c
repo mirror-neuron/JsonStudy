@@ -1,0 +1,32 @@
+<script type="text/javascript">
+
+	var obj7 = 
+	{
+		/* "test":["ccc","ddd"], "exam":["kkk","ppp"] */
+		
+		"test" :
+		[
+			"ccc", "ddd"
+		],
+		"exam" :
+		[
+			"kkk", "ppp"
+		]
+	
+	}
+
+</script>
+<form>
+	
+	<input type="button" value="click1" onclick="alert(typeof obj7)" />
+	<!-- object -->
+	<input type="button" value="click2" onclick="alert(typeof obj7.test)"/>
+	<!-- object -->
+	<input type="button" value="click3" onclick="alert(typeof obj7.exam)"/>
+	<!-- object -->
+	<br><br>
+	
+	
+	
+
+</form>

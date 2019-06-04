@@ -1,0 +1,13 @@
+<script type="text/javascript">
+
+	var obj7 = 
+	{
+		"test":["ccc","ddd"], "exam":["kkk","ppp"]
+	}
+
+</script>
+<form>
+	
+	<input type="button" value="click1" onclick="alert(typeof obj7)" />
+
+</form>

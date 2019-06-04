@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>JsonTest13.html</title>
+<style type="text/css">
+	body
+	{
+		background-color: #1d2d3d;
+		color: #fff;
+	}
+</style>
+
+<script type="text/javascript">
+
+	function printString()
+	{
+		
+	}
+
+
+</script>
+
+</head>
+<body>
+
+<div id="inContents"></div>
+
+</body>
+</html>

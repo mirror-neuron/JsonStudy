@@ -1,0 +1,18 @@
+<%@page import="java.io.BufferedReader"%>
+<%@page import="org.json.JSONArray"%>
+<%@page import="org.json.JSONObject"%>
+<%@ page contentType="text/html; charset=UTF-8"%>
+<%
+	request.setCharacterEncoding("UTF-8");
+%>
+<%
+	StringBuffer sb = new StringBuffer();
+	BufferedReader reader = request.getReader();
+	String line;
+	while ((line = reader.readLine()) != null)
+	{
+		sb.append(line);
+	}
+%>
+<!-- 버퍼 구성된 내용 본문에 뿌림(표현할 내용 있음) -->
+<%=sb.toString() %> 

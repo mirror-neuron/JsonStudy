@@ -1,0 +1,123 @@
+<%@ page contentType="text/html; charset=UTF-8"%>
+<%
+	request.setCharacterEncoding("UTF-8");
+%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Test04.jsp</title>
+
+<script type="text/javascript">
+
+	var xmlHttp;
+
+	// AJAX 객체 생성
+	function createXMLHttpRequest()
+	{
+		var xmlReq = false;
+		
+		if (window.XMLHttpRequest)
+		{
+			xmlReq = new XMLHttpRequest();
+		}
+		else if (window.ActiveXObject)
+		{
+			try
+			{
+				xmlReq = new ActiveXObject("Msxml2.XMLHTTP");
+				
+			} catch (e)
+			{
+				try
+				{
+					xmlReq = new ActiveXObject("Microsoft.XMLHTTP");	
+				} 
+				catch (e)
+				{
+					// XMLHttpRequest 객체를 생성할 수 없는 상태.
+				}
+			}
+		}
+		
+		return xmlReq;
+	}
+
+	function send()
+	{
+		
+	}
+	
+	
+	function handleStateChange()
+	{
+		if (xmlHttp.readyState == 4)
+		{
+			if (xmlHttp.status == 200)
+			{
+				// 업무 추출 → 콜백함수
+				printData();
+			}
+		}
+	}
+	
+	function printData()
+	{
+		var resValue = xmlHttp.responseText;
+		
+		// json.js 라이브러리를 사용하는 경우
+		var func = new Function("return" + resValue);
+		var result = func();
+		
+		var output = document.getElementById("results");
+		var outHtml = "";
+		output.innerHTML = "";
+		
+		document.getElementById("results").style.display = ""; //-- 아래의 'none'을 지우겠다.	
+		
+		outHtml = "이름 : " + result.name + "<br>";
+		outHtml += "나이 : " + result.age + "<br>";
+		
+		output.innerHTML = outHtml;
+		
+	}
+	
+	
+</script>
+
+</head>
+<body>
+
+<div>
+	<table>
+		<tr>
+			<th>이름 : </th>
+			<td>
+				<input type="text" id="name" maxlength="20" style="width: 100px;"/>
+			</td>
+		</tr>
+		<tr>
+			<th>나이 : </th>
+			<td>
+				<input type="text" id="age" maxlength="10" style="width: 100px;"/>
+			</td>
+		</tr>
+		<tr>
+			<td colspan="2" align="center">
+				<input type="button" value="보내기" style="width: 100px;" onclick="send()" />
+			</td>
+		</tr>
+	</table>
+	
+	<br><br>
+
+	
+</div>
+
+
+
+
+
+
+</body>
+</html>

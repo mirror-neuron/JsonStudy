@@ -1,0 +1,55 @@
+<%@ page contentType="text/html; charset=UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Test01.jsp</title>
+
+<!-- json.js 라이브러리 사용  -->
+<script type="text/javascript" src="js/json.js"></script>
+<script type="text/javascript">
+
+	function startRequest()
+	{
+		
+	}
+
+</script>
+
+</head>
+<body>
+
+<div>
+	<table>
+		<tr>
+			<th>이름 : </th>
+			<td>
+				<input type="text" id="name" maxlength="20" style="width: 100px;"/>
+			</td>
+		</tr>
+		<tr>
+			<th>나이 : </th>
+			<td>
+				<input type="text" id="age" maxlength="10" style="width: 100px;"/>
+			</td>
+		</tr>
+		<tr>
+			<td colspan="2" align="center">
+				<input type="button" value="결과" style="width: 100px;" onclick="startRequest()" />
+			</td>
+		</tr>
+	</table>
+	
+	<br><br>
+	
+	<div id="results" style="display: none;"></div>
+	
+</div>
+
+
+
+
+
+
+</body>
+</html>

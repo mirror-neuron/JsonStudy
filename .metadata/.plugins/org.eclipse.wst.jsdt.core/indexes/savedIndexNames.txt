@@ -1,0 +1,4 @@
+INDEX VERSION 1.4+C:\JsonStudy\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+2986658944.index
+722312506.index
+3238420430.index

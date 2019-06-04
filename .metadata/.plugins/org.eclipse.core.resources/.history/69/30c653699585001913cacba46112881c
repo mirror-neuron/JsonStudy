@@ -1,0 +1,26 @@
+<script type="text/javascript">
+
+	var obj8 = 
+	{
+		/* "superman" : {"name":"유진석", "age":43} */
+			
+		"superman" :
+		{
+			"name":"유진석"
+			, "age":43
+		}
+	}
+
+</script>
+
+<form>
+
+	<input type="button" value="click1" onclick="alert(typeof obj8)" />
+	<!-- object -->
+	<input type="button" value="click2" onclick="alert(typeof obj8.superman)" />
+	<input type="button" value="click3" onclick="alert(obj8.superman.name)" />
+	<input type="button" value="click4" onclick="alert(typeof obj8.superman.name)" />
+	<input type="button" value="click4" onclick="alert(obj8.superman.age)" />
+	<input type="button" value="click4" onclick="alert(typeof obj8.superman.age)" />
+
+</form>

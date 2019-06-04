@@ -1,0 +1,11 @@
+<script type="text/javascript">
+
+	var myJSONObject5 = 
+	{
+		"test" : "function(arg) { alert('메소드 테스트 : ' + arg)}"
+	}
+
+</script>
+
+<form>
+</form>

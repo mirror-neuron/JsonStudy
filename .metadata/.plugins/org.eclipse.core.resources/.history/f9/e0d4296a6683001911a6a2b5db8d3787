@@ -1,0 +1,13 @@
+<script type="text/javascript">
+
+	var myJSONObject2 = 
+	{
+		"test" : "hello"
+	}
+
+</script>
+
+<form>
+	<input type="button" value="click" onclick="alert(myJSONObject2.test)">
+	
+</form>

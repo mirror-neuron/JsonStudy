@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>JsonTest01.html</title>
+
+</head>
+<body>
+
+<script type="text/javascript">
+
+	var myJSONObject = 
+	{
+		"test" : "hello"	
+	}
+	
+</script>
+
+<form>
+	<input type="button" value="click" onclick="">
+</form>
+
+</body>
+</html>

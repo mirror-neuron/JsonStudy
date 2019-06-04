@@ -1,0 +1,43 @@
+<script type="text/javascript">
+
+	var obj4 = 
+	{
+		"test" : null
+	}
+
+</script>
+
+<form>
+
+	<input type="button" value="click1" onclick="alert(obj4)"/>
+	<input type="button" value="click2" onclick="alert(typeof obj4)"/>
+	
+	<input type="button" value="click3" onclick="alert(obj4.test)"/>
+	<!-- null -->
+	<input type="button" value="click4" onclick="alert(typeof obj4.test)"/>
+	<!-- object -->
+	
+	<br><br>
+	
+	<input type="button" value="click5" onclick="obj4.test=false; alert(obj4.test);"/>
+	<!-- false -->
+	<input type="button" value="click6" onclick="obj4.test=false; alert(typeof obj4. test);"/>
+	<!-- boolean -->
+	
+	<br><br>
+	
+	<input type="button" value="click7" onclick="obj4.test='123'; alert(obj4.test);"/>
+	<!-- 123 -->
+	<input type="button" value="click8" onclick="obj4.test=123; alert(typeof obj4.test);"/>
+	<!-- number -->
+	
+	<br><br>
+	
+	<input type="button" value="click9" onclick="obj4.test='123'; alert(obj4.test);"/>
+	<!-- 123 -->
+	<input type="button" value="click10" onclick="obj4.test='123'; alert(typeof obj4. test);"/>
+	<!-- string -->
+	
+	
+	
+</form>
